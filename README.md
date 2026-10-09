@@ -1,6 +1,6 @@
 # Cadence
 
-**A from-scratch, very fast messaging system in Rust — the low-latency "plumbing" that moves data between parts of a program in well under a millionth of a second.**
+**A from-scratch, very fast messaging system in Rust — the low-latency "plumbing" that moves data between parts of a program with a typical (median) delay of about 250 nanoseconds.**
 
 Picture the pipe between a live market-data feed and the strategy reacting to it: it has to carry millions of messages a second without ever making the reader wait. Cadence is a hand-built version of that pipe, written to learn — and measure — how production systems like [LMAX Disruptor](https://lmax-exchange.github.io/disruptor/), [Aeron](https://github.com/real-logic/aeron), and [Chronicle Queue](https://github.com/OpenHFT/Chronicle-Queue) reach those speeds. Every benchmark here is reproducible from the repo, with the raw latency data committed alongside the code.
 
